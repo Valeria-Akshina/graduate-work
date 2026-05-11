@@ -12,5 +12,5 @@ app.use('/api', routes);
 
 const PORT = 5000;
 app.listen(PORT, () => {
-    console.log(`база подключена, сервер на порту ${PORT}`);
+    console.log(`база подключена ${PORT}`);
 });
