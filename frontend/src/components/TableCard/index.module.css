@@ -1,0 +1,80 @@
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-secondary);
+}
+
+.button {
+    background: var(--accent-color);
+    color: #000;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cardBusy {
+    opacity: 0.6;
+    filter: grayscale(0.5);
+    cursor: not-allowed;
+    border-color: var(--border-color) !important;
+}
+
+.cardBusy:hover {
+    transform: none;
+}
+
+.free {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+    border: 1px solid #10b981;
+}
+
+.busy {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+    border: 1px solid #ef4444;
+}
+
+.button:disabled {
+    background: #333 !important;
+    color: #777 !important;
+    cursor: not-allowed;
+    box-shadow: none;
+}

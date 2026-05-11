@@ -1,0 +1,28 @@
+.toggleBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.toggleBtn:hover {
+    border-color: var(--accent-color);
+    background: var(--bg-color);
+}
+
+@media (max-width: 480px) {
+    .text {
+        display: none;
+    }
+    .toggleBtn {
+        padding: 8px;
+        border-radius: 50%;
+    }
+}
