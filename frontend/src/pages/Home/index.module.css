@@ -1,0 +1,232 @@
+.hero {
+    height: 700px;
+    background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2070') center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.title {
+    font-size: 64px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.title span {
+    color: var(--accent-color);
+}
+
+.subtitle {
+    color: #ddd;
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+.searchBox {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.inputGroup label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.inputGroup select, .inputGroup input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-primary);
+    outline: none;
+    font-size: 16px;
+}
+
+.searchBtn {
+    background: var(--accent-color);
+    color: #000;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.searchBtn:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .hero {
+        height: 550px;
+    }
+    
+    .title {
+        font-size: 48px;
+    }
+    
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    .searchBox {
+        padding: 25px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: auto;
+        min-height: 550px;
+    }
+    
+    .title {
+        font-size: 36px;
+        margin-bottom: 8px;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    
+    .searchBox {
+        padding: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    
+    .inputGroup {
+        min-width: auto;
+        gap: 6px;
+    }
+    
+    .inputGroup label {
+        font-size: 12px;
+    }
+    
+    .inputGroup select, 
+    .inputGroup input {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .searchBtn {
+        padding: 12px 20px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero {
+        min-height: 500px;
+    }
+    
+    .title {
+        font-size: 28px;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .searchBox {
+        padding: 16px;
+        gap: 12px;
+    }
+    
+    .inputGroup {
+        gap: 5px;
+    }
+    
+    .inputGroup label {
+        font-size: 11px;
+    }
+    
+    .inputGroup select,
+    .inputGroup input {
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    .searchBtn {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .hero {
+        height: 850px;
+    }
+    
+    .title {
+        font-size: 80px;
+    }
+    
+    .subtitle {
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+    
+    .searchBox {
+        padding: 40px;
+        gap: 25px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .inputGroup label {
+        font-size: 14px;
+    }
+    
+    .inputGroup select,
+    .inputGroup input {
+        padding: 14px;
+        font-size: 16px;
+    }
+    
+    .searchBtn {
+        padding: 16px 50px;
+        font-size: 16px;
+    }
+}
