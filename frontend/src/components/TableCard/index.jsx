@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.css';
 
-export const TableCard = ({ tableNumber, capacity, status }) => {
+export const TableCard = ({ id, tableNumber, capacity, status, onBook }) => {
     const currentStatus = status?.toLowerCase();
     const isAvailable = currentStatus === 'свободен';
 
@@ -22,7 +22,7 @@ export const TableCard = ({ tableNumber, capacity, status }) => {
             <button 
                 className={styles.button} 
                 disabled={!isAvailable}
-                onClick={() => isAvailable && alert(`Бронируем стол №${tableNumber}`)}
+                onClick={onBook}
             >
                 {isAvailable ? 'Забронировать' : 'Мест нет'}
             </button>
